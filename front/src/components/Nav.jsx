@@ -30,10 +30,10 @@ const ResponsiveNavbar = () => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link href="#home">Pradžia</Nav.Link>
-              <Nav.Link href="#about">Apie mus</Nav.Link>
-              <Nav.Link href="#services">Paslaugos</Nav.Link>
-              <Nav.Link href="#contact">Kontaktai</Nav.Link>
+              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#about">My Services</Nav.Link>
+              <Nav.Link href="#services">Gallery</Nav.Link>
+              <Nav.Link href="#contact">Contact Me</Nav.Link>
             </Nav>
           
           </Offcanvas.Body>
