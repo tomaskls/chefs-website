@@ -3,7 +3,7 @@ import { Container, Row, Col, Ratio } from 'react-bootstrap';
 const VideoCard = () => {
   return (
     <Container>
-      <Row className="mb-5 justify-content-center">
+      <Row id='video' className="mb-5 justify-content-center">
         <Col md={8}>
           <Ratio aspectRatio="16x9">
             <iframe

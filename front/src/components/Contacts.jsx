@@ -3,7 +3,8 @@ import { Card, ListGroup } from 'react-bootstrap';
 const ContactCard = () => {
   return (
     < >
-    <h2 id="#contact" className="text-center">Contact Me</h2>
+    
+    <h2 id="contact" className="text-center">Contact Me</h2>
     <Card className="mx-auto" style={{ maxWidth: '400px' }}>
       <Card.Body>
         <Card.Title className="mb-4">Jonas Jonaitis</Card.Title>

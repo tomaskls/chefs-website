@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 
 import {
@@ -11,10 +12,13 @@ import {
 const ResponsiveNavbar = () => {
   const [show, setShow] = useState(false);
 
+  const handleNavLinkClick = () => {
+    setShow(false); // Close the menu when a nav link is clicked
+  };
   return (
-    <Navbar bg="light" variant="light" expand={false} className="mb-3">
+    <Navbar bg="light" variant="light" expand={false} className="fixed-top mb-3">
       <Container fluid>
-        <Navbar.Brand href="#home"></Navbar.Brand>
+        <Navbar.Brand href="#home">Chef Fabio</Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar" onClick={() => setShow(true)} />
         <Navbar.Offcanvas
           id="offcanvasNavbar"
@@ -30,19 +34,16 @@ const ResponsiveNavbar = () => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#about">My Services</Nav.Link>
-              <Nav.Link href="#services">Gallery</Nav.Link>
-              <Nav.Link href="#contact">Contact Me</Nav.Link>
+              <Nav.Link onClick={handleNavLinkClick} href="#home">Home</Nav.Link>
+              <Nav.Link onClick={handleNavLinkClick} href="#about">My Services</Nav.Link>
+              <Nav.Link onClick={handleNavLinkClick} href="#services">Gallery</Nav.Link>
+              <Nav.Link onClick={handleNavLinkClick} href="#contact">Contact Me</Nav.Link>
             </Nav>
           
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>
-     <Container>
-      <h1 className="w-100 mt-5 text-center" >Food is my Passion!</h1>
-     <p className="w-100 mt-5 text-center">CATERING & IVENTS PROFESSIONAL PRIVAT CHEF</p>
-     </Container>
+     
 
     </Navbar>
   );
