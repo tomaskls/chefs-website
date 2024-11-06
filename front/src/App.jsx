@@ -3,17 +3,21 @@ import ContactCard from './components/Contacts';
 import FoodGallery from './components/Hero';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import VideoCard from './components/Video';
-import ColorSchemesExample from './components/bajeris';
 import ResponsiveNavbar from './components/Nav';
+import { MyGallery } from './components/Gallery';
+import FluidExample from './components/About';
+import { Footer } from './components/Footer';
 function App() {
 
   return (
     <>
       <ResponsiveNavbar />
-      <ColorSchemesExample />
+      <FluidExample />
       <FoodGallery />
       <VideoCard />
+      <MyGallery />
       <ContactCard />
+      <Footer />
     </>
   )
 }
