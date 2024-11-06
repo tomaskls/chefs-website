@@ -35,8 +35,8 @@ const ResponsiveNavbar = () => {
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link onClick={handleNavLinkClick} href="#home">Home</Nav.Link>
-              <Nav.Link onClick={handleNavLinkClick} href="#about">My Services</Nav.Link>
-              <Nav.Link onClick={handleNavLinkClick} href="#services">Gallery</Nav.Link>
+              <Nav.Link onClick={handleNavLinkClick} href="#services">My Services</Nav.Link>
+              <Nav.Link onClick={handleNavLinkClick} href="#gallery">Gallery</Nav.Link>
               <Nav.Link onClick={handleNavLinkClick} href="#contact">Contact Me</Nav.Link>
             </Nav>
           

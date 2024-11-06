@@ -9,7 +9,7 @@ export function Footer() {
         <Row className="bg-body-secondary mt-1">
             <div className=" d-flex flex-row justify-content-center align-items-center " >
 
-            <p className="bg-danger">&copy; Chef Fabio {currentYear}</p>
+            <p className="">&copy; Chef Fabio {currentYear}</p>
             <p> created by tomazas</p>
             </div>
         </Row>

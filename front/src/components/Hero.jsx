@@ -8,7 +8,7 @@ import {
 
 const FoodGallery = () => {
     return (
-        <Container className="mt- ">
+        <Container id='services' className="mt- ">
             {/* Eilutė su 3 kortelėmis */}
             <Row className=" g-4">
                 {/* Pirma kortelė */}
